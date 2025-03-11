@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.03798282.css",
+    "main.js": "/static/js/main.f97ce414.js",
+    "static/media/about.png": "/static/media/about.619ff0b319a55d0c05b1.png",
+    "static/media/hero.png": "/static/media/hero.f14f30c6d01a97df04f6.png",
+    "static/media/resume.jpg": "/static/media/resume.40d9ec3d0701d254f50f.jpg",
+    "static/media/games Wiki.jpeg": "/static/media/games Wiki.937521f8cdf063d7dac6.jpeg",
+    "static/media/games Ecommerce (1).jpeg": "/static/media/games Ecommerce (1).4330bc0d4d604630059d.jpeg",
+    "static/media/Joel Murphy Resume-1.pdf": "/static/media/Joel Murphy Resume-1.4fa3910b341838381952.pdf",
+    "index.html": "/index.html",
+    "main.03798282.css.map": "/static/css/main.03798282.css.map",
+    "main.f97ce414.js.map": "/static/js/main.f97ce414.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03798282.css",
+    "static/js/main.f97ce414.js"
+  ]
+}
