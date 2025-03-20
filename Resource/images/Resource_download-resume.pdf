@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joel Murphy</title>
+
+    <link//- href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"/>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio </a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="home" class="home">
+      <div class="home-content">
+        <h3>Hello, I'm</h3>
+        <h1>Joel Murphy</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>
+          Hi, I'm a Web Developer. I built beautiful responsive websites with
+          React js. I'm Proficient in Frontend Technologies like HTML, Css3,
+          Bootstrap, TailWindcss, Javascript, React js and Backend in Python,
+          SQL.
+        </p>
+        <div class="social-media">
+          <a target="_blank" href="https://www.facebook.com/share/1XBTDeYmSN/"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a target="_blank" href="#"><i class="bx bxl-instagram-alt"></i></a>
+          <a
+            target="_blank"
+            href="https://x.com/JoelMurphy2k3?t=U08A1TqAzdfowktUY-bTVQ&s=08"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/joel-murphy-456a10281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+        <a href="#" class="btn" download="Resource/download-resume.pdf"
+          >Download Resume</a
+        >
+      </div>
+      <div class="home-img">
+        <img src="Resource/images/joel_1edited.png" alt="" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="Resource/images/border-joel.jpeg" alt="" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Web Developer</h3>
+        <p>
+          I’m a passionate Full-Stack Web Developer with a strong foundation in
+          HTML, CSS, JavaScript, Bootstrap, React.js, Python, and MySQL. As a
+          fresher in web development, I am constantly exploring new technologies
+          to build dynamic and user-friendly web applications. I enjoy solving
+          problems, writing clean code, and creating responsive designs that
+          enhance user experience.
+        </p>
+        <!-- <a href="#" class="btn">Read More</a> -->
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="heading">Latest <span>Project</span></h2>
+      <div class="project-container">
+        <div class="project-box">
+          <img src="Resource/images/portfolio1.jpg" alt="" />
+          <div class="project-lawyer">
+            <h4>Mini Games Ecommerce</h4>
+            <p>
+              A Mini Games-Ecommerce Website built with React JS and API with
+              all Functionality
+            </p>
+            <a target="_blank" href="https://games-shopz.netlify.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="Resource/images/portfolio2.jpg" alt="" />
+          <div class="project-lawyer">
+            <h4>ToDo App</h4>
+            <p>A Todo Application using Javascript (Responsive)</p>
+            <a target="_blank" href="https://todo-app-mini-project.netlify.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="Resource/images/portfolio3.jpg" alt="" />
+          <div class="project-lawyer">
+            <h4>Games Info Website</h4>
+            <p>A Games info Website using Html, Css , Bootstrap (Responsive)</p>
+            <a target="_blank" href="https://gamezwiki.netlify.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2025 by Joel Murphy | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bxs-chevron-up"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="app.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
