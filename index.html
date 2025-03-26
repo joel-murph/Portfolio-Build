@@ -130,11 +130,16 @@
 
       <form action="#">
         <div class="input-box">
-          <input type="text" id="name" placeholder="Full Name" />
-          <input type="email" id="email" placeholder="Email Address" />
+          <input type="text" id="name" placeholder="Full Name" required />
+          <input type="email" id="email" placeholder="Email Address" required />
         </div>
         <div class="input-box">
-          <input type="text" id="subject" placeholder="Email Subject" />
+          <input
+            type="text"
+            id="subject"
+            placeholder="Email Subject"
+            required
+          />
         </div>
         <textarea
           name=""
@@ -142,12 +147,14 @@
           cols="30"
           rows="10"
           placeholder="Your Message"
+          required
         ></textarea>
         <input
           type="submit"
-          onclick="sendMail()"
+          onclick="validation(e)"
           value="Send Message"
           class="btn"
+          required
         />
       </form>
     </section>
@@ -174,6 +181,6 @@
     </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
   </body>
 </html>

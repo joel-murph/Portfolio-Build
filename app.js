@@ -60,6 +60,19 @@ const typed = new Typed(".multiple-text", {
   loop: true,
 });
 
+function validation(e) {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let subject = document.getElementById("subject").value;
+  let message = document.getElementById("message").value;
+
+  if (name === "" || email === "" || subject === "" || message === "") {
+    e.preventDefault(); // Prevent form submission
+    alert("Please enter valid information.");
+  } else {
+    sendMail();
+  }
+}
 function sendMail() {
   let params = {
     name: document.getElementById("name").value,
