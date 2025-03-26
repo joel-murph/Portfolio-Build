@@ -46,15 +46,28 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
-ScrollReveal().reveal(".home-img, .project-box , .contact form", { origin: "bottom" });
+ScrollReveal().reveal(".home-img, .project-box , .contact form", {
+  origin: "bottom",
+});
 ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
-
 
 const typed = new Typed(".multiple-text", {
   strings: ["Frontend Developer", "Web Developer"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
-  loop: true
+  loop: true,
 });
+
+function sendMail() {
+  let params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  };
+  emailjs
+    .send("service_fxo40xb", "template_wm9gmt9", params)
+    .then(alert("Email Sent Successfully"));
+}
