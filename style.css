@@ -192,6 +192,7 @@ span {
 }
 .project-box img {
   width: 100%;
+  height: 230px;
   transition: 0.5s ease;
 }
 .project-box:hover img {
