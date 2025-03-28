@@ -69,13 +69,13 @@
         >
       </div>
       <div class="home-img">
-        <img src="Resource/images/joel_1edited.png" alt="" />
+        <img src="Resource/images/joel_1edited.png" loading="lazy" alt="" />
       </div>
     </section>
 
     <section class="about" id="about">
       <div class="about-img">
-        <img src="Resource/images/border-joel.jpeg" alt="" />
+        <img src="Resource/images/border-joel.jpeg" loading="lazy" alt="" />
       </div>
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
@@ -95,7 +95,11 @@
       <h2 class="heading">Latest <span>Project</span></h2>
       <div class="project-container">
         <div class="project-box">
-          <img src="Resource/images/gaming-Ecommerce_thumbnail.PNG" alt="Games Ecommerce Website" />
+          <img
+            src="Resource/images/gaming-Ecommerce_thumbnail.PNG"
+            loading="lazy"
+            alt="Games Ecommerce Website"
+          />
           <div class="project-lawyer">
             <h4>Mini Games Ecommerce</h4>
             <p>
@@ -108,7 +112,11 @@
           </div>
         </div>
         <div class="project-box">
-          <img src="Resource/images/ToDo_app_Thumbnail.PNG" alt="" />
+          <img
+            src="Resource/images/ToDo_app_Thumbnail.PNG"
+            loading="lazy"
+            alt=""
+          />
           <div class="project-lawyer">
             <h4>ToDo App</h4>
             <p>A Todo Application using Javascript (Responsive)</p>
@@ -118,11 +126,29 @@
           </div>
         </div>
         <div class="project-box">
-          <img src="Resource/images/Games_info_thumbnail.PNG" alt="" />
+          <img
+            src="Resource/images/Games_info_thumbnail.PNG"
+            loading="lazy"
+            alt=""
+          />
           <div class="project-lawyer">
             <h4>Games Info Website</h4>
             <p>A Games info Website using Html, Css , Bootstrap (Responsive)</p>
             <a target="_blank" href="https://gamezwiki.netlify.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+        <div class="project-box">
+          <img
+            src="Resource/images/currency-converter.PNG"
+            loading="lazy"
+            alt=""
+          />
+          <div class="project-lawyer">
+            <h4>Currency Converter</h4>
+            <p>A Currency Exchange Rate Calculating Website build with React js</p>
+            <a target="_blank" href="https://currency-converter-joel.netlify.app/"
               ><i class="bx bx-link-external"></i
             ></a>
           </div>
@@ -156,7 +182,7 @@
         ></textarea>
         <input
           type="submit"
-          onclick="validation(e)"
+          onclick="validation()"
           value="Send Message"
           class="btn"
           required
