@@ -1,239 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joel Murphy</title>
-    <link
-      rel="shortcut icon"
-      href="Resource/images/favicon-2.png"
-      type="image/x-icon"
-    />
 
-    <link//- href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-    rel="stylesheet"/>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joel Murphy — Web Developer</title>
+  <meta name="description"
+    content="Joel Murphy — Full-Stack Web Developer specializing in React.js, JavaScript, Python and more. View my portfolio and projects." />
+  <link rel="shortcut icon" href="Resource/images/favicon-2.png" type="image/x-icon" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
 
-  <body>
-    <header class="header">
-      <a href="#" class="logo">Portfolio </a>
+  <!-- Particles Canvas -->
+  <canvas id="particles-canvas"></canvas>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <a href="#" class="logo">JM</a>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <i class="bx bx-menu" id="menu-icon"></i>
 
-    <section id="home" class="home">
-      <div class="home-content">
-        <h3>Hello, I'm</h3>
-        <h1>Joel Murphy</h1>
-        <h3>And I'm a <span class="multiple-text"></span></h3>
-        <p>
-          Hi, I'm a Web Developer. I built beautiful responsive websites with
-          React js. I'm Proficient in Frontend Technologies like HTML, Css3,
-          Bootstrap, TailWindcss, Javascript, React js and Backend in Python,
-          SQL.
-        </p>
-        <div class="social-media">
-          <a target="_blank" href="https://www.facebook.com/share/1XBTDeYmSN/"
-            ><i class="bx bxl-facebook"></i
-          ></a>
-          <a target="_blank" href="#"><i class="bx bxl-instagram-alt"></i></a>
-          <a
-            target="_blank"
-            href="https://x.com/JoelMurphy2k3?t=U08A1TqAzdfowktUY-bTVQ&s=08"
-            ><i class="bx bxl-twitter"></i
-          ></a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/joel-murphy-456a10281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-        </div>
-        <a
-          href="https://drive.google.com/file/d/19E7zvRj_yyRjQfriwKSWqJEG3QcpNC8A/view?usp=sharing"
-          class="btn"
-          target="_blank"
-          >Download Resume</a
-        >
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== HOME SECTION ===== -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <p class="greeting">Hello, I'm</p>
+      <h1>Joel Murphy</h1>
+      <p class="role-line">I'm a <span class="multiple-text"></span></p>
+      <p>
+        Passionate about building <strong>beautiful, responsive web apps</strong> with React.js.
+        Skilled in <strong>HTML, CSS, JavaScript, Bootstrap, TailwindCSS, React.js, Python</strong> and
+        <strong>SQL</strong> — turning ideas into polished digital experiences.
+      </p>
+      <div class="social-media">
+        <a target="_blank" href="https://www.facebook.com/share/1XBTDeYmSN/" aria-label="Facebook">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a target="_blank" href="#" aria-label="Instagram">
+          <i class="bx bxl-instagram-alt"></i>
+        </a>
+        <a target="_blank" href="https://x.com/JoelMurphy2k3?t=U08A1TqAzdfowktUY-bTVQ&s=08" aria-label="Twitter">
+          <i class="bx bxl-twitter"></i>
+        </a>
+        <a target="_blank"
+          href="https://www.linkedin.com/in/joel-murphy-456a10281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          aria-label="LinkedIn">
+          <i class="bx bxl-linkedin"></i>
+        </a>
       </div>
-      <div class="home-img">
-        <img src="Resource/images/joel_1edited.png" loading="lazy" alt="" />
+      <div class="btn-group">
+        <a href="https://drive.google.com/file/d/1p6_WXSaQUlOWzz0Ca_T4YYwxzW8JDLXd/view?usp=drive_link" class="btn"
+          target="_blank">
+          <i class="bx bx-download"></i> Download Resume
+        </a>
+        <a href="#projects" class="btn btn-outline">
+          <i class="bx bx-code-block"></i> View Projects
+        </a>
       </div>
-    </section>
+    </div>
+    <div class="home-img">
+      <img src="Resource/images/heroPicture.png" loading="lazy" alt="Joel Murphy" />
+    </div>
+  </section>
 
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="Resource/images/border-joel.jpeg" loading="lazy" alt="" />
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="Resource/images/heroPicture.png" loading="lazy" alt="Joel Murphy" />
+    </div>
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <p class="about-role">Full-Stack Web Developer</p>
+      <p>
+        I'm a passionate Full-Stack Web Developer with a strong foundation in HTML, CSS, JavaScript, Bootstrap,
+        React.js, Python, and MySQL. As a fresher in web development, I am constantly exploring new technologies to
+        build dynamic and user-friendly web applications. I enjoy solving problems, writing clean code, and creating
+        responsive designs that enhance user experience.
+      </p>
+
+      <p class="skills-title">My Tech Stack</p>
+
+      <div class="tech-grid">
+        <div class="tech-badge">
+          <i class="bx bxl-html5"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="tech-badge">
+          <i class="bx bxl-css3"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="tech-badge">
+          <i class="bx bxl-javascript"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="tech-badge">
+          <i class="bx bxl-typescript"></i>
+          <span>TypeScript</span>
+        </div>
+        <div class="tech-badge">
+          <i class="bx bxl-react"></i>
+          <span>React.js</span>
+        </div>
+        <div class="tech-badge">
+          <i class="bx bxl-tailwind-css"></i>
+          <span>TailwindCSS</span>
+        </div>
+        <div class="tech-badge">
+          <i class="bx bxl-bootstrap"></i>
+          <span>Bootstrap</span>
+        </div>
+        <div class="tech-badge">
+          <i class="bx bxl-github"></i>
+          <span>Github</span>
+        </div>
       </div>
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Web Developer</h3>
-        <p>
-          I’m a passionate Full-Stack Web Developer with a strong foundation in
-          HTML, CSS, JavaScript, Bootstrap, React.js, Python, and MySQL. As a
-          fresher in web development, I am constantly exploring new technologies
-          to build dynamic and user-friendly web applications. I enjoy solving
-          problems, writing clean code, and creating responsive designs that
-          enhance user experience.
-        </p>
-        <!-- <a href="#" class="btn">Read More</a> -->
-      </div>
-    </section>
-    <section class="projects" id="projects">
-      <h2 class="heading">Latest <span>Project</span></h2>
-      <div class="project-container">
-        <div class="project-box">
-          <img
-            src="Resource/images/gaming-Ecommerce_thumbnail.PNG"
-            loading="lazy"
-            alt="Games Ecommerce Website"
-          />
-          <div class="project-lawyer">
-            <h4>Mini Games Ecommerce</h4>
-            <p>
-              A Mini Games-Ecommerce Website built with React JS and API with
-              all Functionality
-            </p>
-            <a target="_blank" href="https://games-shopz.netlify.app/"
-              ><i class="bx bx-link-external"></i
-            ></a>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects" id="projects">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+    <p class="section-subtitle">A selection of my recent work — click to explore live demos.</p>
+
+    <div class="project-container">
+
+      <!-- Project 1 -->
+      <div class="project-box">
+        <img src="Resource/images/gaming-Ecommerce_thumbnail.PNG" loading="lazy" alt="Mini Games Ecommerce" />
+        <div class="project-layer">
+          <div class="project-tags">
+            <span class="project-tag">React.js</span>
+            <span class="project-tag">API</span>
           </div>
-        </div>
-        <div class="project-box">
-          <img
-            src="Resource/images/ToDo_app_Thumbnail.PNG"
-            loading="lazy"
-            alt=""
-          />
-          <div class="project-lawyer">
-            <h4>ToDo App</h4>
-            <p>A Todo Application using Javascript (Responsive)</p>
-            <a target="_blank" href="https://todo-app-mini-project.netlify.app/"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-        <div class="project-box">
-          <img
-            src="Resource/images/Games_info_thumbnail.PNG"
-            loading="lazy"
-            alt=""
-          />
-          <div class="project-lawyer">
-            <h4>Games Info Website</h4>
-            <p>A Games info Website using Html, Css , Bootstrap (Responsive)</p>
-            <a target="_blank" href="https://gamezwiki.netlify.app/"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-        <div class="project-box">
-          <img
-            src="Resource/images/currency-converter.PNG"
-            loading="lazy"
-            alt=""
-          />
-          <div class="project-lawyer">
-            <h4>Currency Converter</h4>
-            <p>
-              A Currency Exchange Rate Calculating Website build with React
-              js(Responsive)
-            </p>
-            <a
-              target="_blank"
-              href="https://currency-converter-joel.netlify.app/"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-        <div class="project-box">
-          <img
-            src="Resource/images/ai-image-generator-thumbnail.PNG"
-            loading="lazy"
-            alt=""
-          />
-          <div class="project-lawyer">
-            <h4>AI Image Generator</h4>
-            <p>
-              AI Image Generator creates images from text using Hugging Face
-              models.(Responsive)
-            </p>
-            <a target="_blank" href="https://image-generator-joel.netlify.app/"
-              ><i class="bx bx-link-external"></i
-            ></a>
+          <h4>Mini Games Ecommerce</h4>
+          <p>A full-featured Games Ecommerce site built with React JS and REST API with all shopping functionality.</p>
+          <div class="project-layer-footer">
+            <a class="project-link" target="_blank" href="https://games-shopz.netlify.app/">
+              Live Demo <i class="bx bx-link-external"></i>
+            </a>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
-
-      <form action="#">
-        <div class="input-box">
-          <input type="text" id="name" placeholder="Full Name" required />
-          <input type="email" id="email" placeholder="Email Address" required />
+      <!-- Project 2 -->
+      <div class="project-box">
+        <img src="Resource/images/ToDo_app_Thumbnail.PNG" loading="lazy" alt="ToDo App" />
+        <div class="project-layer">
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Responsive</span>
+          </div>
+          <h4>ToDo App</h4>
+          <p>A clean and responsive Todo Application built with vanilla JavaScript.</p>
+          <div class="project-layer-footer">
+            <a class="project-link" target="_blank" href="https://todo-app-mini-project.netlify.app/">
+              Live Demo <i class="bx bx-link-external"></i>
+            </a>
+          </div>
         </div>
-        <div class="input-box">
-          <input
-            type="text"
-            id="subject"
-            placeholder="Email Subject"
-            required
-          />
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-box">
+        <img src="Resource/images/Games_info_thumbnail.PNG" loading="lazy" alt="Games Info Website" />
+        <div class="project-layer">
+          <div class="project-tags">
+            <span class="project-tag">HTML/CSS</span>
+            <span class="project-tag">Bootstrap</span>
+          </div>
+          <h4>Games Info Website</h4>
+          <p>A responsive Games info website built with HTML, CSS and Bootstrap.</p>
+          <div class="project-layer-footer">
+            <a class="project-link" target="_blank" href="https://gamezwiki.netlify.app/">
+              Live Demo <i class="bx bx-link-external"></i>
+            </a>
+          </div>
         </div>
-        <textarea
-          name=""
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <input
-          type="submit"
-          onclick="validation()"
-          value="Send Message"
-          class="btn"
-          required
-        />
-      </form>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; 2025 by Joel Murphy | All Rights Reserved.</p>
       </div>
-      <div class="footer-iconTop">
-        <a href="#home"><i class="bx bxs-chevron-up"></i></a>
-      </div>
-    </footer>
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "iH8lyRRDRv5Ww_cXY",
-        });
-      })();
-    </script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="app.js" defer></script>
-  </body>
+      <!-- Project 4 -->
+      <div class="project-box">
+        <img src="Resource/images/currency-converter.PNG" loading="lazy" alt="Currency Converter" />
+        <div class="project-layer">
+          <div class="project-tags">
+            <span class="project-tag">React.js</span>
+            <span class="project-tag">API</span>
+          </div>
+          <h4>Currency Converter</h4>
+          <p>A real-time Currency Exchange Rate Calculator built with React.js and a live API.</p>
+          <div class="project-layer-footer">
+            <a class="project-link" target="_blank" href="https://currency-converter-joel.netlify.app/">
+              Live Demo <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-box">
+        <img src="Resource/images/ai-image-generator-thumbnail.PNG" loading="lazy" alt="AI Image Generator" />
+        <div class="project-layer">
+          <div class="project-tags">
+            <span class="project-tag">AI / ML</span>
+            <span class="project-tag">Hugging Face</span>
+          </div>
+          <h4>AI Image Generator</h4>
+          <p>Generate stunning images from text prompts using Hugging Face AI models.</p>
+          <div class="project-layer-footer">
+            <a class="project-link" target="_blank" href="https://image-generator-joel.netlify.app/">
+              Live Demo <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <p class="section-subtitle">Got a project or opportunity? I'd love to hear from you.</p>
+
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <div>
+          <p class="contact-info-title">Let's Build Something Together</p>
+          <p class="contact-info-subtitle">
+            I'm currently open to freelance work and full-time opportunities. Whether you have a question or just want
+            to say hi, my inbox is always open!
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="bx bx-envelope"></i></div>
+          <div class="contact-item-text">
+            <span>Email</span>
+            <a href="mailto:joelmurphy123123@email.com">joelmurphy123123@email.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="bx bxl-linkedin"></i></div>
+          <div class="contact-item-text">
+            <span>LinkedIn</span>
+            <a target="_blank" href="https://www.linkedin.com/in/joel-murphy-456a10281">joel-murphy-456a10281</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="bx bxl-twitter"></i></div>
+          <div class="contact-item-text">
+            <span>Twitter / X</span>
+            <a target="_blank" href="https://x.com/JoelMurphy2k3">@JoelMurphy2k3</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form id="contact-form" action="#">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name</label>
+              <input class="form-input" type="text" id="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-input" type="email" id="email" placeholder="john@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <input class="form-input" type="text" id="subject" placeholder="Project Inquiry" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-input" id="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" id="submit-btn" class="btn">
+            <i class="bx bx-send"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <span id="toast-icon"></span>
+    <span id="toast-msg"></span>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2025 by <span>Joel Murphy</span> | All Rights Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home" aria-label="Back to top"><i class="bx bxs-chevron-up"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({ publicKey: "iH8lyRRDRv5Ww_cXY" });
+    })();
+  </script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="app.js" defer></script>
+</body>
+
 </html>
